@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Darckcat_beat - Beatmaker</title>
+
+<link rel="icon" type="image/webp" href="images/artiste/logo kit.webp">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/beatmaker.css">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+
+<a href="index.html" class="logo">
+
+<img src="images/artiste/logo kit.webp" alt="Logo Boss Kit">
+
+<span>darckcat_beat</span>
+
+</a>
+
+<button class="hamburger" onclick="toggleMenu()">
+☰
+</button>
+
+<div class="nav-menu" id="navMenu">
+
+<a href="index.html">Accueil</a>
+
+<a href="artiste.html">Artiste</a>
+
+<a href="gaming.html">Gaming</a>
+
+<a href="beatmaker.html">Beatmaker</a>
+
+</div>
+
+</nav>
+
+<!-- HERO -->
+
+<header class="hero">
+
+<div class="hero-content">
+
+<h1>
+Mon univers <span>Musicale</span>
+</h1>
+
+<p>
+Créer des émotions à travers la musique.
+</p>
+
+<a href="#about" class="btn">
+Découvrir
+</a>
+
+</div>
+
+</header>
+
+<!-- A PROPOS -->
+
+<section id="about" class="reveal">
+
+<h2 class="title">
+À propos
+</h2>
+
+<div class="about-box">
+
+<p>
+La musique fait partie de ma vie depuis maintenant plus de <b>10 ans</b>, grâce au piano. C'est avec cet instrument que j'ai découvert le plaisir de jouer, de comprendre les mélodies et de développer mon oreille musicale.
+</p>
+
+<p>
+Quelques années plus tard, j'ai découvert le monde de la création musicale grâce aux productions de <b>Darkside8461</b>. Ses morceaux m'ont impressionné et m'ont donné envie de créer, moi aussi, des instrumentales capables de transmettre des émotions.
+</p>
+
+<p>
+Par la suite, j'ai découvert <b>Nhezia</b>, avec qui j'ai eu la chance d'échanger sur Instagram, ainsi que <b>MacMuzik</b>. Tous les deux ont énormément nourri ma passion et renforcé mon envie de progresser dans la production musicale.
+</p>
+
+<p>
+J'ai ensuite testé plusieurs applications de création musicale avant de découvrir <b>YSOS</b>, qui est rapidement devenu une grande source d'inspiration. Depuis 2020, ses productions et son univers influencent beaucoup ma manière d'aborder la musique.
+</p>
+
+<p>
+J'ai commencé à produire sur <b>FL Studio Mobile</b>, ce qui m'a permis d'apprendre les bases de la MAO. Plus tard, j'ai pu passer sur <b>FL Studio PC</b>, qui est aujourd'hui mon principal logiciel de production.
+</p>
+
+<p>
+Il y a également quelques années, j'ai créé un compte <b>TikTok</b> afin de partager les musiques que j'apprécie et de faire découvrir les artistes qui m'inspirent au quotidien.
+</p>
+
+</div>
+
+</section>
+
+<!-- INSPIRATIONS -->
+
+<section id="inspirations" class="reveal">
+
+<h2 class="title">
+Mes inspirations
+</h2>
+
+
+<div class="inspirations">
+
+
+
+<div class="inspiration-card" onclick="openInspiration(0)">
+
+<h3>🎧 Darkside8461</h3>
+
+<p>
+Une découverte qui m'a donné envie de créer.
+</p>
+
+</div>
+
+
+
+
+<div class="inspiration-card" onclick="openInspiration(1)">
+
+<h3>🎵 Nhezia</h3>
+
+<p>
+Un univers qui m'a beaucoup marqué.
+</p>
+
+</div>
+
+
+
+
+<div class="inspiration-card" onclick="openInspiration(2)">
+
+<h3>🎶 MacMuzik</h3>
+
+<p>
+Une source d'inspiration musicale.
+</p>
+
+</div>
+
+
+
+
+<div class="inspiration-card" onclick="openInspiration(3)">
+
+<h3>🔥 YSOS</h3>
+
+<p>
+Une grande influence depuis 2020.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- MODAL INSPIRATIONS -->
+
+
+<div id="inspirationModal">
+
+
+<div class="music-box">
+
+
+<span onclick="closeInspiration()">
+×
+</span>
+
+
+<h2 id="inspirationTitle"></h2>
+
+
+<p id="inspirationText"></p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- EQUIPEMENT -->
+
+
+<section id="equipment" class="reveal">
+
+
+<h2 class="title">
+Mon équipement
+</h2>
+
+
+
+<div class="equipment">
+
+
+
+<div class="equipment-card" onclick="openEquipment(0)">
+
+
+<h3>🎹 FL Studio</h3>
+
+
+<p>
+Logiciel de création musicale
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="equipment-card" onclick="openEquipment(1)">
+
+
+<h3>🥁 Drum Kits</h3>
+
+
+<p>
+Packs utilisés pour mes productions
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- MODAL EQUIPEMENT -->
+
+
+<div id="equipmentModal">
+
+
+<div class="music-box">
+
+
+<span onclick="closeEquipment()">
+×
+</span>
+
+
+<h2 id="equipmentTitle"></h2>
+
+
+<p id="equipmentText"></p>
+
+
+
+<div id="drumGallery">
+
+
+<div>
+
+<img src="images/beatmaker/astral.webp">
+
+<p>YSOS Drum Kit astral</p>
+
+</div>
+
+
+<div>
+
+<img src="images/beatmaker/cosmos.webp">
+
+<p>YSOS Drum Kit cosmos</p>
+
+</div>
+
+
+<div>
+
+<img src="images/beatmaker/nova.webp">
+
+<p>YSOS Drum Kit nova</p>
+
+</div>
+
+
+<div>
+
+<img src="images/beatmaker/nebula.webp">
+
+<p>YSOS Drum Kit nebula</p>
+
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+<!-- STYLES MUSICAUX -->
+
+<section id="styles" class="reveal">
+
+
+<h2 class="title">
+Styles musicaux
+</h2>
+
+
+
+<div class="styles-container">
+
+
+<div class="style-card" onclick="openStyles()">
+
+
+<h3>🎤 Rap</h3>
+
+
+<p>
+Découvrir les différents styles qui m'inspirent.
+</p>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- MODAL STYLES -->
+
+
+<div id="styleModal">
+
+
+<div class="music-box">
+
+
+<span onclick="closeStyles()">
+×
+</span>
+
+
+<h2>
+🎤 Mes styles de Rap
+</h2>
+
+
+
+<div class="rap-styles">
+
+
+
+<div>
+
+<h3>💿 Drill</h3>
+
+<p>
+Un style sombre basé sur des basses puissantes,
+des flows rapides et une ambiance souvent mélancolique.
+</p>
+
+</div>
+
+
+
+
+<div>
+
+<h3>⚡ Jersey Rap</h3>
+
+<p>
+Un mélange entre le rap et les rythmes Jersey,
+caractérisé par des kicks rapides et une énergie dansante.
+</p>
+
+</div>
+
+
+
+
+<div>
+
+<h3>🔥 Trap</h3>
+
+<p>
+Un style basé sur les 808, les hi-hats rapides
+et des ambiances souvent atmosphériques.
+</p>
+
+</div>
+
+
+
+<div>
+
+<h3>🚀 Rage</h3>
+
+<p>
+Un style moderne avec des synthés agressifs,
+des mélodies énergiques et une forte influence digitale.
+</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+<section id="sons" class="reveal">
+
+<h2 class="title">
+Quelques productions
+</h2>
+
+
+<div class="music-list">
+
+
+<div class="music-card">
+
+<h3>🎵 intro</h3>
+
+<audio controls>
+
+<source src="audio/intro.mp3" type="audio/mpeg">
+
+</audio>
+
+</div>
+
+
+
+<div class="music-card">
+
+<h3>🎵 interpellation</h3>
+
+<audio controls>
+
+<source src="audio/interpellation.mp3" type="audio/mpeg">
+
+</audio>
+
+</div>
+
+
+<div class="music-card">
+
+<h3>🎵 espoir</h3>
+
+<audio controls>
+
+<source src="audio/Espoir.mp3" type="audio/mpeg">
+
+</audio>
+
+</div>
+
+<div class="music-card">
+
+<h3>🎵 A venir</h3>
+
+<audio controls>
+
+<source src="audio/a venir.mp3" type="audio/mpeg">
+
+</audio>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- CONTACT -->
+
+
+<section id="contact" class="reveal">
+
+
+<h2 class="title">
+Contact
+</h2>
+
+
+
+<div class="contact-box">
+
+
+
+<a href="https://discord.gg/mNQwYTyxmP" target="_blank">
+
+💬 Discord
+
+</a>
+
+
+
+<a href="https://www.tiktok.com/@radio_flow.express" target="_blank">
+
+🎵 TikTok
+
+</a>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<footer>
+
+© 2026 Kit Cat
+
+</footer>
+
+
+
+
+
+<script src="js/beatmaker.js"></script>
+
+
+</body>
+
+</html>

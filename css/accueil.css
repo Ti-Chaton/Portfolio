@@ -1,0 +1,622 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Poppins,sans-serif;
+}
+
+body{
+
+min-height:100vh;
+
+color:white;
+
+background:
+linear-gradient(rgba(15,23,42,.55),rgba(15,23,42,.80)),
+url("../images/artiste/Vermeil.webp");
+
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+
+overflow-x:hidden;
+
+}
+
+    color:white;
+
+    background:
+
+    linear-gradient(rgba(15,23,42,.55),rgba(15,23,42,.80)),
+
+   url("../images/artiste/Vermeil.webp");
+
+    background-size:cover;
+    background-position:center;
+
+    animation:bgZoom 15s ease-in-out infinite alternate;
+
+}
+
+.overlay{
+
+    position:fixed;
+    inset:0;
+
+    background:#00000055;
+
+    backdrop-filter:blur(3px);
+
+}
+
+header{
+
+    position:relative;
+
+    z-index:2;
+
+    width:100%;
+
+    padding:160px 30px 30px;
+
+}
+
+.content{
+
+    max-width:900px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+h1{
+
+    font-size:80px;
+
+    color:#D4AF37;
+
+    font-weight:800;
+
+    letter-spacing:2px;
+
+    margin-bottom:10px;
+
+}
+
+p{
+
+    font-size:22px;
+
+    margin-bottom:60px;
+
+    opacity:.9;
+
+}
+
+.buttons{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:25px;
+
+}
+
+.btn{
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    gap:15px;
+
+    padding:22px;
+
+    border-radius:18px;
+
+    text-decoration:none;
+
+    color:white;
+
+    font-size:28px;
+
+    font-weight:700;
+
+    transition:.35s;
+
+    backdrop-filter:blur(10px);
+
+}
+
+.artiste{
+
+    background:#0f172add;
+
+    border:2px solid #D4AF37;
+
+}
+
+.gamer{
+
+    background:#050505dd;
+
+    border:2px solid #E0B84B;
+
+}
+
+.beatmaker{
+
+    background:#2B174Fdd;
+
+    border:2px solid #6DA9FF;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-6px) scale(1.03);
+
+    box-shadow:0 15px 40px rgba(0,0,0,.5);
+
+}
+
+footer{
+
+    position:fixed;
+
+    bottom:15px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    text-align:center;
+
+    font-size:12px;
+
+    opacity:.6;
+
+    z-index:2;
+
+}
+
+@keyframes bgZoom{
+
+    from{
+
+        background-size:100%;
+
+    }
+
+    to{
+
+        background-size:108%;
+
+    }
+
+}
+
+@media(max-width:800px){
+
+    h1{
+
+        font-size:52px;
+
+    }
+
+    p{
+
+        font-size:18px;
+
+        margin-bottom:40px;
+
+    }
+
+    .btn{
+
+        font-size:22px;
+
+        padding:20px;
+
+    }
+
+}
+
+/* NAVBAR */
+
+nav{
+
+position:fixed;
+
+top:0;
+left:0;
+
+width:100%;
+
+padding:20px 8%;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+z-index:10;
+
+background:#0f172a88;
+
+backdrop-filter:blur(10px);
+
+}
+
+
+/* LOGO */
+
+.logo{
+
+display:flex;
+
+align-items:center;
+
+gap:12px;
+
+text-decoration:none;
+
+color:#d4af37;
+
+font-size:26px;
+
+font-weight:700;
+
+transition:.3s;
+
+}
+
+
+.logo img{
+
+width:45px;
+
+height:45px;
+
+border-radius:50%;
+
+object-fit:cover;
+
+}
+
+
+.logo:hover{
+
+transform:scale(1.05);
+
+}
+
+
+/* MENU */
+
+.nav-menu{
+
+display:flex;
+
+align-items:center;
+
+gap:30px;
+
+}
+
+
+.nav-menu a{
+
+color:white;
+
+text-decoration:none;
+
+font-size:17px;
+
+font-weight:500;
+
+transition:.3s;
+
+}
+
+
+.nav-menu a:hover{
+
+color:#d4af37;
+
+transform:scale(1.1);
+
+}
+
+
+/* BOUTON MOBILE */
+
+.hamburger{
+
+display:none;
+
+background:none;
+
+border:none;
+
+color:white;
+
+font-size:30px;
+
+cursor:pointer;
+
+}
+
+@media(max-width:800px){
+
+
+nav{
+
+padding:15px 5%;
+
+}
+
+
+.logo span{
+
+font-size:20px;
+
+}
+
+
+.logo img{
+
+width:40px;
+
+height:40px;
+
+}
+
+
+.hamburger{
+
+display:block;
+
+}
+
+
+.nav-menu{
+
+position:absolute;
+
+top:70px;
+
+left:0;
+
+width:100%;
+
+background:#0f172aee;
+
+display:none;
+
+flex-direction:column;
+
+padding:30px 0;
+
+gap:25px;
+
+}
+
+
+
+.nav-menu.active{
+
+display:flex;
+
+}
+
+
+}
+
+/* CONTACT ACCUEIL */
+
+.contact-home{
+
+padding:100px 8%;
+
+text-align:center;
+
+}
+
+
+.contact-home .title{
+
+font-size:45px;
+
+margin-bottom:60px;
+
+}
+
+
+.contact{
+
+text-align:center;
+
+}
+
+
+.contact p{
+
+font-size:20px;
+
+opacity:.8;
+
+margin-bottom:25px;
+
+}
+
+
+.contact a{
+
+color:#d4af37;
+
+font-size:22px;
+
+text-decoration:none;
+
+font-weight:bold;
+
+display:inline-block;
+
+transition:.3s;
+
+}
+
+
+.contact a:hover{
+
+color:white;
+
+transform:scale(1.15);
+
+}
+
+/* CONTACT ACCUEIL */
+
+.contact-home{
+
+    padding:120px 8%;
+    text-align:center;
+
+}
+
+
+.contact-home h2{
+
+    font-size:42px;
+    margin-bottom:50px;
+    color:white;
+
+
+
+.overlay{
+    position:fixed;
+    inset:0;
+    background:#00000055;
+    backdrop-filter:blur(3px);
+    opacity:0;
+    pointer-events:none;
+    transition:.3s;
+}
+
+.overlay.active{
+    opacity:1;
+    pointer-events:auto;
+}
+
+/* RESPONSIVE MOBILE */
+
+@media screen and (max-width:768px){
+
+    body{
+        overflow-x:hidden;
+    }
+
+
+    /* NAVBAR */
+
+    nav{
+
+        padding:15px 20px;
+
+    }
+
+
+    .logo span{
+
+        font-size:18px;
+
+    }
+
+
+    nav a{
+
+        font-size:14px;
+
+    }
+
+
+ 
+
+
+/* CONTACT */
+
+.contact-home{
+
+    padding:50px 8% 70px;
+    text-align:center;
+
+}
+
+
+.contact-home h2{
+
+    font-size:40px;
+    margin-bottom:30px;
+
+}
+
+
+.contact-box{
+
+    max-width:550px;
+    margin:auto;
+
+    padding:30px;
+
+    background:#1e293b;
+
+    border-radius:20px;
+
+}
+
+.services{
+    padding:60px 8% 30px;
+}
+
+body{
+    margin:0;
+    background:#0f172a;
+    color:white;
+}
+section,
+.contact-home,
+.services,
+.hero{
+
+    background:transparent;
+
+}
+
+    /* FOOTER */
+
+    footer{
+
+        font-size:14px;
+
+        padding:20px;
+
+        text-align:center;
+
+    }
+
+}
+
+*{
+    box-sizing:border-box;
+}
+
+html, body{
+    width:100%;
+    overflow-x:hidden;
+}

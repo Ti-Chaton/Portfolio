@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Boss Kit - Gaming</title>
+
+<link rel="icon" type="image/webp" href="images/gaming/logo kit.webp">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/gaming.css">
+
+</head>
+
+
+<body>
+
+
+<nav>
+
+<a href="index.html" class="logo">
+
+<img src="images/gaming/logo kit.webp">
+
+<span>Boss Kit</span>
+
+</a>
+
+
+<button class="hamburger" onclick="toggleMenu()">
+☰
+</button>
+
+
+<div class="nav-menu" id="navMenu">
+
+<a href="index.html">Accueil</a>
+
+<a href="artiste.html">Artiste</a>
+
+<a href="gaming.html">Gaming</a>
+
+<a href="beatmaker.html">Beatmaker</a>
+
+</div>
+
+
+</nav>
+
+
+
+
+
+<header class="hero">
+
+
+<div class="hero-content">
+
+
+<h1>
+Mon univers <span>Gaming</span>
+</h1>
+
+
+<p>
+Compétition, progression et amusement.
+</p>
+
+
+<a href="#jeux" class="btn">
+Découvrir
+</a>
+
+
+</div>
+
+
+</header>
+
+
+<section id="apropos" class="about">
+
+
+<h2 class="title">
+À propos
+</h2>
+
+
+<div class="about-box">
+
+
+<p>
+Depuis plusieurs années, le gaming fait partie de mon univers.
+J'aime découvrir de nouveaux jeux, progresser et repousser mes limites,
+que ce soit dans la compétition ou dans la recherche de performance tout en m'amusant.
+</p>
+
+
+<p>
+Je joue principalement à des battle royal, comme Fortnite mais mon univers est varié : Geometry Dash, minecratf...ect
+</p>
+
+
+<p>
+Mon objectif est de continuer à progresser, améliorer mon niveau
+et partager ma passion du jeu vidéo à travers les streams.
+</p> 
+
+<p>
+J'ai récemment commencer à coder un jeu via godot engine.
+</p> 
+
+</div>
+
+
+</section>
+
+
+<section id="jeux">
+
+
+<h2 class="title">
+Mes jeux
+</h2>
+
+
+
+<div class="games">
+
+
+
+<div class="game favorite" onclick="openGame(0)">
+
+<div class="favorite-badge">
+🔥
+</div>
+
+<img src="images/gaming/fortnite.webp">
+
+<h3>Fortnite</h3>
+
+<p>
+Battle Royale
+</p>
+
+</div>
+
+
+
+
+<div class="game favorite" onclick="openGame(1)">
+
+<div class="favorite-badge">
+🔥
+</div>
+
+<img src="images/gaming/geometrydash.webp">
+
+<h3>Geometry Dash</h3>
+
+<p>
+Rythme & précision
+</p>
+
+</div>
+
+
+
+
+<div class="game" onclick="openGame(2)">
+
+<img src="images/gaming/osu.webp">
+
+<h3>osu!</h3>
+
+<p>
+Jeu de rythme
+</p>
+
+</div>
+
+
+
+
+
+<div class="game" onclick="openGame(3)">
+
+<img src="images/gaming/overwatch.webp">
+
+<h3>Overwatch</h3>
+
+<p>
+FPS coopératif
+</p>
+
+</div>
+
+
+
+
+
+<div class="game favorite" onclick="openGame(4)">
+
+<div class="favorite-badge">
+🔥
+</div>
+
+<img src="images/gaming/minecraft.webp">
+
+<h3>Minecraft</h3>
+
+<p>
+Création & survie
+</p>
+
+</div>
+
+
+
+
+
+<div class="game" onclick="openGame(5)">
+
+<img src="images/gaming/autres.webp">
+
+<h3>Autres jeux</h3>
+
+<p>
+Bibliothèque gaming
+</p>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- MODAL JEUX -->
+
+
+<div id="gameModal">
+
+
+<div class="game-box">
+
+
+<span onclick="closeGame()">
+×
+</span>
+
+
+<h2 id="gameTitle"></h2>
+
+
+<p id="gameDescription"></p>
+
+
+<h3>
+Informations
+</h3>
+
+
+<ul id="gameInfo"></ul>
+
+
+<button onclick="closeGame()">
+Fermer
+</button>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<!-- MODAL AUTRES JEUX -->
+
+
+<div id="otherModal">
+
+
+<div class="other-box">
+
+
+<span onclick="closeOther()">
+×
+</span>
+
+
+
+<h2>
+🎮 Mes autres jeux
+</h2>
+
+
+
+
+<div class="other-games">
+
+
+
+<div>
+<img src="images/gaming/forza5.webp">
+<p>forza 5</p>
+</div>
+
+
+<div>
+<img src="images/gaming/deadcells.webp">
+<p>deadcells</p>
+</div>
+
+
+<div>
+<img src="images/gaming/severedsteel.webp">
+<p>severed	steel</p>
+</div>
+
+
+<div>
+<img src="images/gaming/stray.webp">
+<p>stray</p>
+</div>
+
+
+<div>
+<img src="images/gaming/wuwa.webp">
+<p>wuthing waves</p>
+</div>
+
+
+<div>
+<img src="images/gaming/genshin.webp">
+<p>genshin impact</p>
+</div>
+
+
+<div>
+<img src="images/gaming/cyberpunk.webp">
+<p>cyberpunk</p>
+</div>
+
+
+<div>
+<img src="images/gaming/autre.webp">
+<p>+ de 95 autres jeux</p>
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<section id="setup">
+
+
+<h2 class="title">
+Mon Setup
+</h2>
+
+
+<div class="setup">
+
+
+<div class="setup-card">
+<h3>💻 PC</h3>
+<p>MSI Thin 15</p>
+</div>
+
+
+<div class="setup-card">
+<h3>🖥️ Écran</h3>
+<p>144 Hz</p>
+</div>
+
+
+<div class="setup-card">
+<h3>🎧 Casque</h3>
+<p>JBL Quantum 350</p>
+</div>
+
+
+<div class="setup-card">
+<h3>🖱️ Souris</h3>
+<p>Konix Aegir</p>
+</div>
+
+
+<div class="setup-card">
+<h3>⌨️ Clavier</h3>
+<p>MAD60 HE</p>
+</div>
+
+
+</div>
+
+
+</section>
+
+
+<section id="contact">
+
+<h2 class="title">
+Contact
+</h2>
+
+
+<div class="contact-box">
+
+
+<a href="https://https://discord.gg/Bs6Y8Q2e93" target="_blank">
+💬 Discord
+</a>
+
+
+<a href="https://https://www.tiktok.com/@le_boss_kit" target="_blank">
+🎵 TikTok
+</a>
+
+
+
+</div>
+
+
+</section>
+
+
+<footer>
+
+© 2026 Kit Cat
+
+</footer>
+
+
+
+<script src="js/gaming.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Kit Cat - Artiste</title>
+
+<link rel="icon" href="images/logo_kit.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/artiste.css">
+
+</head>
+
+
+<body>
+
+
+<nav>
+
+<a href="index.html" class="logo">
+
+<img src="images/artiste/logo kit.webp">
+
+<span>Kit Cat</span>
+
+</a>
+
+
+<button class="hamburger" onclick="toggleMenu()">
+☰
+</button>
+
+
+<div class="nav-menu" id="navMenu">
+
+<a href="index.html">Accueil</a>
+
+<a href="artiste.html">Artiste</a>
+
+<a href="gaming.html">Gaming</a>
+
+<a href="beatmaker.html">Beatmaker</a>
+
+</div>
+
+</nav>
+
+
+
+<header class="hero">
+
+
+<div class="hero-content">
+
+
+<h1>
+Mon univers <span>Artistique</span>
+</h1>
+
+
+<p>
+Illustrations, personnages et créations originales.
+Chaque dessin raconte une histoire.
+</p>
+
+
+<a href="#galerie" class="btn">
+Voir mes œuvres
+</a>
+
+
+</div>
+
+
+</header>
+
+
+
+
+
+<section id="about" class="reveal">
+
+
+<h2 class="title">
+À propos
+</h2>
+
+
+<div class="about">
+
+
+<img src="images/artiste/cat.webp">
+
+
+<p>
+
+Je suis un artiste passionné par le dessin et la création visuelle.
+
+J'explore différents styles et techniques afin de donner vie à mes idées.
+
+Mon objectif est de créer des œuvres qui transmettent une émotion et racontent une histoire.
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<section id="galerie" class="reveal">
+
+<h2 class="title">
+Galerie
+</h2>
+
+
+<div class="gallery">
+
+
+
+<div class="art">
+
+<img src="images/artiste/Groot x Venom.webp">
+
+<h3>GROOT x VENOM</h3>
+
+<p>
+Crayons de couleurs + liner
+</p>
+
+</div>
+
+
+
+<div class="art">
+
+<img src="images/artiste/Street Rabbit.webp">
+
+<h3>Street Rabbit</h3>
+
+<p>
+Crayon + liner
+</p>
+
+</div>
+
+
+
+<div class="art">
+
+<img src="images/artiste/Robot Bugs Bunny.webp">
+
+<h3>Robot Bugs Bunny</h3>
+
+<p>
+Liner + feutres
+</p>
+
+</div>
+
+
+
+<div class="art">
+
+<img src="images/artiste/flow stitch.webp">
+
+<h3>Flow Stitch</h3>
+
+<p>
+Crayon à papier
+</p>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<section class="reveal">
+
+
+<h2 class="title">
+Techniques
+</h2>
+
+
+<div class="skills">
+
+
+<div class="skill" onclick="openTechnique(0)">
+✏️
+<h3>Crayon</h3>
+</div>
+
+
+<div class="skill" onclick="openTechnique(1)">
+🖊️
+<h3>Feutres</h3>
+</div>
+
+
+<div class="skill" onclick="openTechnique(2)">
+🎨
+<h3>Crayon de couleur</h3>
+</div>
+
+
+<div class="skill" onclick="openTechnique(3)">
+💻
+<h3>Dessin numérique</h3>
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+<!-- MODAL TECHNIQUES -->
+
+
+<div id="techModal">
+
+
+<div class="tech-box">
+
+
+<span onclick="closeTechnique()">
+×
+</span>
+
+
+<h2 id="techTitle">
+</h2>
+
+
+<p id="techDescription">
+</p>
+
+
+<h3>
+Matériel :
+</h3>
+
+
+<ul id="techMaterial">
+</ul>
+
+
+<button onclick="closeTechnique()">
+Fermer
+</button>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<section id="contact">
+
+
+<h2 class="title">
+Contact
+</h2>
+
+
+<div class="contact">
+
+
+<a href="https://discord.gg/mNQwYTyxmP" target="_blank">
+
+💬 Discord
+
+</a>
+
+
+<a href="https://www.instagram.com/p/DG94xh4Ip_z">
+📷 Instagram
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+<footer>
+
+© 2026 Kit Cat
+
+</footer>
+
+
+
+<script src="js/artiste.js"></script>
+
+
+</body>
+
+</html>
+
+
